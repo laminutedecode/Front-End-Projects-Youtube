@@ -1,0 +1,80 @@
+body {
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .champs {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 50px;
+  }
+  
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  ul {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  ion-icon {
+    font-size: 20px;
+    margin-right: 5px;
+    background: midnightblue;
+    padding: 0.5rem;
+    color: #f1f1f1;
+    border-radius: 50%;
+  }
+
+.delete{
+    background: crimson;
+  }
+
+  .modify {
+    background: yellow;
+    color: #333;
+  }
+

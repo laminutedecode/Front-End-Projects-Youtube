@@ -1,0 +1,117 @@
+*, ::before, ::after {
+box-sizing: border-box;
+margin: 0;
+padding:0;
+font-family: Arial, Helvetica, sans-serif;
+border-radius: 5px;
+}
+
+body {
+ min-height: 100vh;
+display: grid;
+place-items: center;
+background: no-repeat center / cover url('./fond.jpg');
+padding: 0 1rem;
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    height: 500px;
+    background: rgba(255,255,255,.7);
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #f1f1f1;
+    padding: 25px 0 30px 25px;
+    background: rgba(77, 19, 93, 0.7);
+    text-transform: uppercase;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+form {
+   width: 100%;
+   height: 100%;
+   padding: 0.5rem;
+}
+
+form .box {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+
+
+form .box span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color:  #931aa3;
+    
+}
+
+form .box input, form .box textarea, form .box select {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: rgba(252,252,252,.7);
+    padding-left: 3rem;
+    color: #931aa3;
+}
+
+form textarea {
+    resize: none;
+    padding-top: 1.2rem;
+    height: 100px;
+}
+
+
+form input {
+    height: 50px;
+}
+
+form input:focus, form textarea:focus {
+    border: 1px solid #931aa3;
+}
+
+
+::placeholder {
+    color:  #d1d1d1;
+}
+
+form select {
+    width: 200px;
+    height: 50px;
+    padding: 0 0.5rem;
+    border: none;
+    outline: none;
+    color:  #d1d1d1;
+    accent-color: #931aa3;
+}
+
+form button {
+    width: 150px;
+    height: 50px;
+    color: #f1f1f1;
+    background: #931aa3;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    transition: background .2s ease-in;
+    margin-top: 4rem;
+
+}
+
+form button:hover {
+    background: #410f47;
+}
