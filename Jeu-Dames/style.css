@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#plateau {
+  display: grid;
+  grid-template-columns: repeat(10, 50px);
+  grid-template-rows: repeat(10, 50px);
+  gap: 1px;
+  background: #8b4513;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.case {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer
+}
+
+.case-claire {
+  background: #deb887;
+}
+
+.case-foncee {
+  background: #8b4513;
+}
+
+.pion {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  transition: transform .3s ease;
+}
+
+.pion-j1 {
+  background: #fff;
+}
+.pion-j2 {
+  background: #000;
+}
+
+.pion.selectionne {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(255,255,0,.5)
+}
+
+.case-possible {
+  background: rgba(255,255,0,.5);
+}
+
+.info-jeu {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#nouvelle-partie {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition:background .2s ease-in-out;
+  &:hover {
+    background: #45a049;
+  }
+}
+
+footer {
+  margin-top: 20px;
+  color: #666;
+  text-align: center;
+}
+
+.dame {
+  border: 4px solid gold;
+}
+
+@keyframes capture {
+  0% {transform: scale(1)}
+  50% {transform: scale(1.2)}
+  100% {transform: scale(0)}
+}
+
+.capture {
+  animation: capture .5s forwards;
+}
